@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 30px;
+  background-color: #1f2937;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.about, .skills, .projects {
+  padding: 60px 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about h2, .skills h2, .projects h2 {
+  margin-bottom: 20px;
+}
+
+.about h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills li {
+  background-color: #4f46e5;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.project-card {
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+}
